@@ -54,9 +54,7 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
   .card{border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;background:#fff;transition:box-shadow .15s,transform .15s}
   .card:hover{box-shadow:0 8px 24px rgba(47,125,58,.12);transform:translateY(-2px)}
-  .card .top{display:flex;align-items:center;gap:12px}
-  .swatch{width:52px;height:52px;flex:none;border-radius:12px;background:var(--mint);display:grid;place-items:center}
-  .swatch svg{width:40px;height:40px}
+  .card .photo{width:calc(100% + 36px);height:auto;aspect-ratio:4/3;object-fit:cover;margin:-18px -18px 4px;border-radius:16px 16px 0 0;display:block;background:var(--mint)}
   .card h4{margin:0;font-size:17px}
   .price{font-weight:700;color:var(--green);font-size:18px}
   .price small{font-weight:500;color:var(--muted);font-size:14px}
@@ -129,27 +127,27 @@
 
       <h3 class="cat">Các loại đậu</h3>
       <div class="grid">
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#5aa83c"><use href="#beans"/></svg></div><h4>Đậu xanh hạt</h4></div><div class="price">46.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu xanh hạt">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#e3c34a"><use href="#beans"/></svg></div><h4>Đậu xanh cà đôi</h4></div><div class="price">46.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu xanh cà đôi">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#f0d35c"><use href="#beans"/></svg></div><h4>Đậu xanh tróc vỏ</h4></div><div class="price">46.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu xanh tróc vỏ">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#2b2b2b"><use href="#beans"/></svg></div><h4>Đậu đen</h4></div><div class="price">60.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu đen">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#a8322d"><use href="#beans"/></svg></div><h4>Đậu đỏ</h4></div><div class="price">55.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu đỏ">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#d9b36a"><use href="#beans"/></svg></div><h4>Đậu nành</h4></div><div class="price">30.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu nành">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#c98a5a"><use href="#beans"/></svg></div><h4>Đậu phộng</h4></div><div class="price">45.000 – 60.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu phộng">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-xanh-hat.jpg" alt="Đậu xanh hạt" loading="lazy" width="360" height="270"><h4>Đậu xanh hạt</h4><div class="price">46.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu xanh hạt">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-xanh-ca-doi.jpg" alt="Đậu xanh cà đôi" loading="lazy" width="360" height="270"><h4>Đậu xanh cà đôi</h4><div class="price">46.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu xanh cà đôi">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-xanh-troc-vo.jpg" alt="Đậu xanh tróc vỏ" loading="lazy" width="360" height="270"><h4>Đậu xanh tróc vỏ</h4><div class="price">46.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu xanh tróc vỏ">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-den.jpg" alt="Đậu đen" loading="lazy" width="360" height="270"><h4>Đậu đen</h4><div class="price">60.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu đen">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-do.jpg" alt="Đậu đỏ" loading="lazy" width="360" height="270"><h4>Đậu đỏ</h4><div class="price">55.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu đỏ">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-nanh.jpg" alt="Đậu nành" loading="lazy" width="360" height="270"><h4>Đậu nành</h4><div class="price">30.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu nành">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-phong.jpg" alt="Đậu phộng" loading="lazy" width="360" height="270"><h4>Đậu phộng</h4><div class="price">45.000 – 60.000đ <small>/ 1kg</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu phộng">Đặt hàng</a></article>
       </div>
 
       <h3 class="cat">Tiêu, hạt sen &amp; đồ khô</h3>
       <div class="grid">
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#4a3a2e"><use href="#beans"/></svg></div><h4>Tiêu xay</h4></div><div class="price">100.000đ <small>/ 500g</small><span class="alt">25.000đ <small>/ 100g</small></span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Tiêu xay">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#3a2f28"><use href="#beans"/></svg></div><h4>Tiêu hạt</h4></div><div class="price">100.000đ <small>/ 500g</small><span class="alt">25.000đ <small>/ 100g</small></span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Tiêu hạt">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#e8dcc0"><use href="#beans"/></svg></div><h4>Hạt sen khô</h4></div><div class="price">90.000đ <small>/ 500g</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Hạt sen khô">Đặt hàng</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#3b2a24"><use href="#beans"/></svg></div><h4>Nấm mèo</h4></div><div class="price">13.000đ <small>/ 100g</small><span class="alt">120.000đ <small>/ 1kg</small></span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Nấm mèo">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/tieu-xay.jpg" alt="Tiêu xay" loading="lazy" width="360" height="270"><h4>Tiêu xay</h4><div class="price">100.000đ <small>/ 500g</small><span class="alt">25.000đ <small>/ 100g</small></span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Tiêu xay">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/tieu-hat.jpg" alt="Tiêu hạt" loading="lazy" width="360" height="270"><h4>Tiêu hạt</h4><div class="price">100.000đ <small>/ 500g</small><span class="alt">25.000đ <small>/ 100g</small></span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Tiêu hạt">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/hat-sen.jpg" alt="Hạt sen khô" loading="lazy" width="360" height="270"><h4>Hạt sen khô</h4><div class="price">90.000đ <small>/ 500g</small></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Hạt sen khô">Đặt hàng</a></article>
+        <article class="card"><img class="photo" src="anh/sp/nam-meo.jpg" alt="Nấm mèo" loading="lazy" width="360" height="270"><h4>Nấm mèo</h4><div class="price">13.000đ <small>/ 100g</small><span class="alt">120.000đ <small>/ 1kg</small></span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Nấm mèo">Đặt hàng</a></article>
       </div>
 
       <h3 class="cat">Hàng tươi</h3>
       <div class="grid">
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#d8a77a"><use href="#beans"/></svg></div><h4>Đậu phộng tươi</h4></div><div><span class="daily">Giá theo ngày</span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu phộng tươi (hỏi giá hôm nay)">Hỏi giá &amp; đặt</a></article>
-        <article class="card"><div class="top"><div class="swatch"><svg style="color:#b9d97a"><use href="#beans"/></svg></div><h4>Cà pháo</h4></div><div><span class="daily">Giá theo ngày</span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Cà pháo (hỏi giá hôm nay)">Hỏi giá &amp; đặt</a></article>
+        <article class="card"><img class="photo" src="anh/sp/dau-phong-tuoi.jpg" alt="Đậu phộng tươi" loading="lazy" width="360" height="270"><h4>Đậu phộng tươi</h4><div><span class="daily">Giá theo ngày</span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Đậu phộng tươi (hỏi giá hôm nay)">Hỏi giá &amp; đặt</a></article>
+        <article class="card"><img class="photo" src="anh/sp/ca-phao.jpg" alt="Cà pháo" loading="lazy" width="360" height="270"><h4>Cà pháo</h4><div><span class="daily">Giá theo ngày</span></div><a class="btn" href="https://zalo.me/0944275676" target="_blank" rel="noopener" data-order="Cà pháo (hỏi giá hôm nay)">Hỏi giá &amp; đặt</a></article>
       </div>
     </div>
   </section>
